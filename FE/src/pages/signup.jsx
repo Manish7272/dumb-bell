@@ -31,7 +31,7 @@ function signup() {
       return handleError("name, email, password are required!")
     }
     try {
-      const url = "http://localhost:8080/auth/signup"
+      const url = "https://dumb-bell.vercel.app/auth/signup"
       const response = await fetch(url, {
         method: "POST",
         headers: {
