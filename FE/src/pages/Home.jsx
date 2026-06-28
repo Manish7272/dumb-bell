@@ -25,7 +25,7 @@ const Home = () => {
 
     const fetchProducts = async () => {
         try {
-            const url = "http://localhost:8080/products";
+            const url = "https://dumb-bell.vercel.app/products";
             const headers = { headers: { "authorization": localStorage.getItem("token") } }
             const response = await fetch(url, headers)
 
